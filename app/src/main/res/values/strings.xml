@@ -1,0 +1,17 @@
+<resources>
+    <string name="app_name">GLogsLite</string>
+    <string name="menu_home">Home</string>
+    <string name="menu_library">Library</string>
+    <string name="menu_profile">Profile</string>
+    <string name="unknow">Unknow</string>
+    <string name="retry">Retry</string>
+    <string name="search_game">Search game</string>
+    <string name="scroll_to_top">Scroll to top</string>
+    <string name="search">Search</string>
+    <string name="close">Close</string>
+    <string name="back">Navigate up</string>
+    <string name="library">Library</string>
+    <string name="no_games_in_library">No Games in Library</string>
+    <string name="profile">Profile</string>
+    <string name="unknown">Unknown</string>
+</resources>
