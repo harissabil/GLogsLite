@@ -13,5 +13,5 @@ dependencyResolutionManagement {
     }
 }
 
-rootProject.name = "GLogsLite"
+rootProject.name = "GLogs Lite"
 include(":app")

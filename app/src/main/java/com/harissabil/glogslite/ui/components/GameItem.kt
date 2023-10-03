@@ -61,7 +61,8 @@ fun GameItem(
                 )
             )
             Text(text = platforms ?: "",
-                style = MaterialTheme.typography.titleSmall)
+                style = MaterialTheme.typography.titleSmall,
+                color = Color.Gray)
         }
     }
 }
