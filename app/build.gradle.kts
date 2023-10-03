@@ -100,4 +100,7 @@ dependencies {
     implementation("androidx.room:room-ktx:2.5.2")
     //noinspection KaptUsageInsteadOfKsp
     kapt("androidx.room:room-compiler:2.5.2")
+
+    // Splash Screen
+    implementation("androidx.core:core-splashscreen:1.1.0-alpha02")
 }
