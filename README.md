@@ -3,11 +3,11 @@
 GLogs Lite is my submission app for [Belajar Membuat Aplikasi Android dengan Jetpack Compose](https://www.dicoding.com/academies/445) class from Dicoding. 
 
 ## Table of Contents
-- [Screenshot](#screenshot)
-- [Tech Stack](#tech-stack)
+- [Screenshots](#screenshots)
+- [Tech Stacks](#tech-stacks)
 - [Setup](#setup)
 
-## Screenshot
+## Screenshots
 <table>
   <tbody>
     <tr>
@@ -19,7 +19,7 @@ GLogs Lite is my submission app for [Belajar Membuat Aplikasi Android dengan Jet
   </tbody>
 </table>
 
-## Tech Stack
+## Tech Stacks
 
 List of technologies used in this app.
 - Language: [Kotlin](https://kotlinlang.org)
