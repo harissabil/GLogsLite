@@ -13,8 +13,6 @@ GLogs Lite is my submission app for [Belajar Membuat Aplikasi Android dengan Jet
     <tr>
       <td><img src="assets/screenshot/home.png?raw=true"/></td>
       <td><img src="assets/screenshot/library.png?raw=true"/></td>
-    </tr>
-    <tr>
       <td><img src="assets/screenshot/search.png?raw=true"/></td>
       <td><img src="assets/screenshot/detail.png?raw=true"/></td>
     </tr>
