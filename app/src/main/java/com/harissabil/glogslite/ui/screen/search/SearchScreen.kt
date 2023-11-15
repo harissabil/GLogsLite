@@ -135,7 +135,7 @@ fun SearchContent(
             val game = games[index]
             GameItem(
                 name = game.name,
-                platforms = game.platforms.joinToString { it.name },
+                platforms = game.platforms?.joinToString { it.name },
                 image = game.image.mediumUrl,
                 modifier = Modifier.clickable { onClick(game.guid, game.name) }
             )

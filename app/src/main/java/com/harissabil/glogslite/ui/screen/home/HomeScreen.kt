@@ -11,6 +11,7 @@ import androidx.compose.foundation.layout.Box
 import androidx.compose.foundation.layout.Column
 import androidx.compose.foundation.layout.PaddingValues
 import androidx.compose.foundation.layout.Row
+import androidx.compose.foundation.layout.WindowInsets
 import androidx.compose.foundation.layout.padding
 import androidx.compose.foundation.lazy.LazyColumn
 import androidx.compose.foundation.lazy.LazyListState
@@ -96,6 +97,7 @@ fun HomeScreen(
                 )
             }
         },
+        contentWindowInsets = WindowInsets(0, 0, 0, 0),
         modifier = modifier,
     ) { innerPadding ->
         val scope = rememberCoroutineScope()
@@ -168,7 +170,7 @@ fun HomeContent(
             if (game != null) {
                 GameItem(
                     name = game.name,
-                    platforms = game.platforms.joinToString { it.name },
+                    platforms = game.platforms?.joinToString { it.name },
                     image = game.image.mediumUrl,
                     modifier = Modifier.clickable { onClick(game.guid, game.name) }
                 )

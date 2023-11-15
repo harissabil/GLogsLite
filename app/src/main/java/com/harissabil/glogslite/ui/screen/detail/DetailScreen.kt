@@ -152,6 +152,8 @@ fun DetailScreen(
                             viewModel.getDetailGame(gameId)
                         })
                 }
+
+                else -> {}
             }
         }
     }

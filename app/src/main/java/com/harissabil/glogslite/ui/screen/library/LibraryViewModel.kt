@@ -11,7 +11,8 @@ import kotlinx.coroutines.launch
 
 class LibraryViewModel(private val repository: GameRepository) : ViewModel() {
 
-    private val _uiState: MutableStateFlow<UiState<List<GameEntity>>> = MutableStateFlow(UiState.Loading)
+    private val _uiState: MutableStateFlow<UiState<List<GameEntity>>> =
+        MutableStateFlow(UiState.Loading)
     val uiState: StateFlow<UiState<List<GameEntity>>>
         get() = _uiState
 

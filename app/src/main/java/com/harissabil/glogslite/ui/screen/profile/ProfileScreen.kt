@@ -4,6 +4,7 @@ import androidx.compose.foundation.Image
 import androidx.compose.foundation.layout.Arrangement
 import androidx.compose.foundation.layout.Column
 import androidx.compose.foundation.layout.Spacer
+import androidx.compose.foundation.layout.WindowInsets
 import androidx.compose.foundation.layout.fillMaxWidth
 import androidx.compose.foundation.layout.padding
 import androidx.compose.foundation.layout.size
@@ -44,7 +45,8 @@ fun ProfileScreen(
                 },
                 scrollBehavior = scrollBehavior,
             )
-        }
+        },
+        contentWindowInsets = WindowInsets(0, 0, 0, 0),
     ) { innerPadding ->
         ProfileContent(
             modifier = modifier.padding(innerPadding)
@@ -73,7 +75,7 @@ fun ProfileContent(
         Spacer(modifier = Modifier.padding(8.dp))
         Text(text = "Muhammad Haris Sabil Al Karim", style = MaterialTheme.typography.titleLarge)
         Spacer(modifier = Modifier.padding(4.dp))
-        Text(text = "harissabil04@gmail.com", style = MaterialTheme.typography.titleMedium)
+        Text(text = "harissabildev@gmail.com", style = MaterialTheme.typography.titleMedium)
     }
 }
 

@@ -3,6 +3,8 @@ package com.harissabil.glogslite
 import androidx.compose.animation.core.tween
 import androidx.compose.animation.slideInHorizontally
 import androidx.compose.animation.slideOutHorizontally
+import androidx.compose.foundation.layout.ExperimentalLayoutApi
+import androidx.compose.foundation.layout.WindowInsets
 import androidx.compose.foundation.layout.padding
 import androidx.compose.material.icons.Icons
 import androidx.compose.material.icons.filled.Home
@@ -38,6 +40,7 @@ import com.harissabil.glogslite.ui.screen.profile.ProfileScreen
 import com.harissabil.glogslite.ui.screen.search.SearchScreen
 import com.harissabil.glogslite.ui.theme.GLogsLiteTheme
 
+@OptIn(ExperimentalLayoutApi::class)
 @Composable
 fun GLogsLiteApp(
     modifier: Modifier = Modifier,
@@ -52,12 +55,13 @@ fun GLogsLiteApp(
                 BottomBar(navController = navController)
             }
         },
-        modifier = modifier
+        modifier = modifier,
+        contentWindowInsets = WindowInsets(0, 0, 0, 0)
     ) { innerPadding ->
         NavHost(
             navController = navController,
             startDestination = Screen.Home.route,
-            modifier = Modifier.padding(innerPadding),
+            modifier = Modifier.padding(top = innerPadding.calculateTopPadding()),
         ) {
             composable(
                 Screen.Home.route,
@@ -181,6 +185,7 @@ fun BottomBar(
         }
     }
 }
+
 
 @Preview
 @Composable

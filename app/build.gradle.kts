@@ -103,4 +103,6 @@ dependencies {
 
     // Splash Screen
     implementation("androidx.core:core-splashscreen:1.1.0-alpha02")
+
+    implementation("androidx.activity:activity:1.8.0-rc01")
 }

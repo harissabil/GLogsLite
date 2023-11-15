@@ -65,7 +65,7 @@ data class ResultsItem(
 	val expectedReleaseMonth: Any,
 
 	@field:SerializedName("platforms")
-	val platforms: List<PlatformsItem>,
+	val platforms: List<PlatformsItem>?,
 
 	@field:SerializedName("api_detail_url")
 	val apiDetailUrl: String,

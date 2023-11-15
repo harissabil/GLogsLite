@@ -17,7 +17,7 @@ interface ApiService {
         @Query("platforms") platform: Int,
         @Query("limit") limit: Int,
         @Query("offset") offset: Int,
-    ) : GamesResponse
+    ): GamesResponse
 
     @GET("search")
     suspend fun getSearchGame(
