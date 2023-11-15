@@ -1,25 +1,44 @@
 # GLogs Lite
 
-Android app for the final submission of Dicoding [Belajar Membuat Aplikasi Android dengan Jetpack Compose](https://www.dicoding.com/academies/445) class.
+GLogs Lite is my submission app for [Belajar Membuat Aplikasi Android dengan Jetpack Compose](https://www.dicoding.com/academies/445) class from Dicoding. 
 
 ## Table of Contents
 - [Screenshot](#screenshot)
-- [Setup](#setup)
 - [Tech Stack](#tech-stack)
+- [Setup](#setup)
 
 ## Screenshot
-| Splash Screen | Home | Library |
-| --- | --- | --- |
-| ![](assets/splash.png?raw=true) | ![](assets/home.png?raw=true) | ![](assets/library.png?raw=true) |
+<table>
+  <tbody>
+    <tr>
+      <td><img src="assets/screenshot/home.png?raw=true"/></td>
+      <td><img src="assets/screenshot/library.png?raw=true"/></td>
+      <td><img src="assets/screenshot/search.png?raw=true"/></td>
+      <td><img src="assets/screenshot/detail.png?raw=true"/></td>
+    </tr>
+  </tbody>
+</table>
 
-| Search | Detail |
-| --- | --- |
-| ![](assets/search.png?raw=true) | ![](assets/detail.png?raw=true) |
+## Tech Stack
+
+List of technologies used in this app.
+- Language: [Kotlin](https://kotlinlang.org)
+- Architecture: [Android App Architecture](https://developer.android.com/topic/architecture)
+- User Interface: [Jetpack Compose](https://developer.android.com/jetpack/compose)
+- Concurrency: [Coroutines](https://kotlinlang.org/docs/coroutines-overview.html)
+- Local Database: [Room](https://developer.android.com/training/data-storage/room)
+- Networking: [OkHttp](https://square.github.io/okhttp) & [Retrofit](https://square.github.io/retrofit)
+- Pagination: [Paging 3](https://developer.android.com/topic/libraries/architecture/paging/v3-overview)
+- Image Loading: [Coil](https://coil-kt.github.io)
+- Theme: [Material Design 3](https://m3.material.io/)
+
 
 ## Setup
-- create `local.properties` file in [root folder](./) if not exists.
-- Add `API_KEY` and `BASE_URL` in the file as shown below.
+To build this project, you need the latest stable version of [Android Studio](https://developer.android.com/studio).
 
+1. Clone or download the project and open it in Android Studio.
+2. Create a `local.properties` file in the project root folder if it doesn't exist.
+3. Add `API_KEY` and `BASE_URL` in the file as shown below.
 
 ```android
 ...
@@ -28,31 +47,5 @@ API_KEY = "key here"
 BASE_URL = "https://www.giantbomb.com/api/"
 ```
 
-- Get `API_KEY` from [Giant Bomb](https://www.giantbomb.com/)
-
-## Tech Stack
-
-List of technologies used in this app.
-
-### Languages
-- [Kotlin](https://kotlinlang.org)
-
-### Libraries
-- [Jetpack Compose](https://developer.android.com/jetpack/compose/documentation)
-- [MVVM](https://developer.android.com/topic/architecture)
-- [Android Jetpack](https://developer.android.com/jetpack/)
-- [Paging 3](https://developer.android.com/topic/libraries/architecture/paging/v3-overview)
-- [Coil](https://github.com/coil-kt/coil)
-- [Kotlin Coroutines](https://kotlinlang.org/docs/reference/coroutines-overview.html)
-- [OkHttp](https://github.com/square/okhttp)
-- [Retrofit](https://github.com/square/retrofit)
-- [Room](https://developer.android.com/training/data-storage/room)
-
-### Tools
-- [ADB Idea](https://plugins.jetbrains.com/plugin/7380-adb-idea)
-- [Postman](https://www.getpostman.com)
-- [Scrcpy](https://github.com/Genymobile/scrcpy)
-
-### Design
-- [Material Design](https://material.io)
-- [Material Icons](https://material.io/resources/icons/)
+4. Get `API_KEY` from [Giant Bomb](https://www.giantbomb.com/).
+5. Sync the project with Gradle and run the app on an Android emulator or a physical Android device.
