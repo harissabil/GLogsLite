@@ -61,7 +61,7 @@ fun GLogsLiteApp(
         NavHost(
             navController = navController,
             startDestination = Screen.Home.route,
-            modifier = Modifier.padding(top = innerPadding.calculateTopPadding()),
+            modifier = Modifier.padding(innerPadding)
         ) {
             composable(
                 Screen.Home.route,

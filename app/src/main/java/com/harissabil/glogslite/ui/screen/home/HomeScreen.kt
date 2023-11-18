@@ -12,6 +12,7 @@ import androidx.compose.foundation.layout.Column
 import androidx.compose.foundation.layout.PaddingValues
 import androidx.compose.foundation.layout.Row
 import androidx.compose.foundation.layout.WindowInsets
+import androidx.compose.foundation.layout.fillMaxSize
 import androidx.compose.foundation.layout.padding
 import androidx.compose.foundation.lazy.LazyColumn
 import androidx.compose.foundation.lazy.LazyListState
@@ -102,10 +103,12 @@ fun HomeScreen(
     ) { innerPadding ->
         val scope = rememberCoroutineScope()
         val listState = rememberLazyListState()
-        val showButton: Boolean by remember {
+        val showButton: Boolean by remember(listState) {
             derivedStateOf { listState.firstVisibleItemIndex > 0 }
         }
-        Box(modifier = Modifier.padding(innerPadding)) {
+        Box(modifier = Modifier
+            .fillMaxSize()
+            .padding(innerPadding)) {
             Column {
                 PlatformChip(
                     modifier = modifier.padding(start = 16.dp),
@@ -133,8 +136,8 @@ fun HomeScreen(
                     targetOffsetY = { fullHeight -> fullHeight }
                 ),
                 modifier = Modifier
-                    .padding(bottom = 30.dp)
-                    .align(Alignment.BottomCenter)
+                    .padding(bottom = 30.dp, end = 16.dp)
+                    .align(Alignment.BottomEnd)
             ) {
                 ScrollToTopButton(
                     onClick = {
